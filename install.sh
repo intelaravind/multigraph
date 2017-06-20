@@ -1,3 +1,5 @@
+tar -xvf pack.tar.gz
+
 echo "Install CUDPP"
 git clone https://github.com/cudpp/cudpp.git
 cd cudpp
