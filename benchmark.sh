@@ -194,69 +194,69 @@ cd src
 echo "WS BFS (Original numbering)"
 for j in soc-LiveJournal1 soc-orkut hollywood-2009 indochina-2004 rmat24 road_usa rgg_n_2_24_s0 kron_g500-logn21 roadNet-CA
 do
-./cusha_bfs --edgelist ../${j}/${j}.cusha1  
+./ws_bfs --edgelist ../${j}/${j}.cusha1  
 done
 echo "WS BFS (Random numbering)"
-./cusha_bfs --edgelist ../soc-LiveJournal1_/soc-LiveJournal1_.cusha1  --arbparam 3266740
-./cusha_bfs --edgelist ../soc-orkut_/soc-orkut_.cusha1  --arbparam 17047
-./cusha_bfs --edgelist ../hollywood-2009_/hollywood-2009_.cusha1  --arbparam 775106
-./cusha_bfs --edgelist ../indochina-2004_/indochina-2004_.cusha1  --arbparam 6750856
-./cusha_bfs --edgelist ../rmat24_/rmat24_.cusha1  --arbparam 0
-./cusha_bfs --edgelist ../kron_g500-logn21_/kron_g500-logn21_.cusha1  --arbparam 495356
-./cusha_bfs --edgelist ../rgg_n_2_24_s0_/rgg_n_2_24_s0_.cusha1  --arbparam 8934858
-./cusha_bfs --edgelist ../road_usa_/road_usa_.cusha1  --arbparam 15916361
-./cusha_bfs --edgelist ../roadNet-CA_/roadNet-CA_.cusha1  --arbparam 1916604
+./ws_bfs --edgelist ../soc-LiveJournal1_/soc-LiveJournal1_.cusha1  --arbparam 3266740
+./ws_bfs --edgelist ../soc-orkut_/soc-orkut_.cusha1  --arbparam 17047
+./ws_bfs --edgelist ../hollywood-2009_/hollywood-2009_.cusha1  --arbparam 775106
+./ws_bfs --edgelist ../indochina-2004_/indochina-2004_.cusha1  --arbparam 6750856
+./ws_bfs --edgelist ../rmat24_/rmat24_.cusha1  --arbparam 0
+./ws_bfs --edgelist ../kron_g500-logn21_/kron_g500-logn21_.cusha1  --arbparam 495356
+./ws_bfs --edgelist ../rgg_n_2_24_s0_/rgg_n_2_24_s0_.cusha1  --arbparam 8934858
+./ws_bfs --edgelist ../road_usa_/road_usa_.cusha1  --arbparam 15916361
+./ws_bfs --edgelist ../roadNet-CA_/roadNet-CA_.cusha1  --arbparam 1916604
 
 
 echo "WS CC (Original numbering)"
 for j in soc-LiveJournal1 soc-orkut hollywood-2009 indochina-2004 rmat24 road_usa rgg_n_2_24_s0 kron_g500-logn21 roadNet-CA
 do
-./cusha_cc ${j} --edgelist ../${j}/${j}.cusha1  
+./ws_cc ${j} --edgelist ../${j}/${j}.cusha1  
 done
 echo "WS CC (Random numbering)"
-./cusha_cc --edgelist ../soc-LiveJournal1_/soc-LiveJournal1_.cusha1  --arbparam 3266740
-./cusha_cc --edgelist ../soc-orkut_/soc-orkut_.cusha1  --arbparam 17047
-./cusha_cc --edgelist ../hollywood-2009_/hollywood-2009_.cusha1  --arbparam 775106
-./cusha_cc --edgelist ../indochina-2004_/indochina-2004_.cusha1  --arbparam 6750856
-./cusha_cc --edgelist ../rmat24_/rmat24_.cusha1  --arbparam 0
-./cusha_cc --edgelist ../kron_g500-logn21_/kron_g500-logn21_.cusha1  --arbparam 495356
-./cusha_cc --edgelist ../rgg_n_2_24_s0_/rgg_n_2_24_s0_.cusha1  --arbparam 8934858
-./cusha_cc --edgelist ../road_usa_/road_usa_.cusha1  --arbparam 15916361
-./cusha_cc --edgelist ../roadNet-CA_/roadNet-CA_.cusha1  --arbparam 1916604
+./ws_cc --edgelist ../soc-LiveJournal1_/soc-LiveJournal1_.cusha1  --arbparam 3266740
+./ws_cc --edgelist ../soc-orkut_/soc-orkut_.cusha1  --arbparam 17047
+./ws_cc --edgelist ../hollywood-2009_/hollywood-2009_.cusha1  --arbparam 775106
+./ws_cc --edgelist ../indochina-2004_/indochina-2004_.cusha1  --arbparam 6750856
+./ws_cc --edgelist ../rmat24_/rmat24_.cusha1  --arbparam 0
+./ws_cc --edgelist ../kron_g500-logn21_/kron_g500-logn21_.cusha1  --arbparam 495356
+./ws_cc --edgelist ../rgg_n_2_24_s0_/rgg_n_2_24_s0_.cusha1  --arbparam 8934858
+./ws_cc --edgelist ../road_usa_/road_usa_.cusha1  --arbparam 15916361
+./ws_cc --edgelist ../roadNet-CA_/roadNet-CA_.cusha1  --arbparam 1916604
 
 
 echo "WS SSSP (Original numbering)"
 for j in soc-LiveJournal1 soc-orkut hollywood-2009 indochina-2004 rmat24 road_usa rgg_n_2_24_s0 kron_g500-logn21 roadNet-CA
 do
-./cusha_sssp --edgelist ../${j}/${j}.cusha2  
+./ws_sssp --edgelist ../${j}/${j}.cusha2  
 done
 echo "WS SSSP (Random numbering)"
-./cusha_sssp --edgelist ../soc-LiveJournal1_/soc-LiveJournal1_.cusha2  --arbparam 3266740
-./cusha_sssp --edgelist ../soc-orkut_/soc-orkut_.cusha2  --arbparam 17047
-./cusha_sssp --edgelist ../hollywood-2009_/hollywood-2009_.cusha2  --arbparam 775106
-./cusha_sssp --edgelist ../indochina-2004_/indochina-2004_.cusha2  --arbparam 6750856
-./cusha_sssp --edgelist ../rmat24_/rmat24_.cusha2  --arbparam 0
-./cusha_sssp --edgelist ../kron_g500-logn21_/kron_g500-logn21_.cusha2  --arbparam 495356
-./cusha_sssp --edgelist ../rgg_n_2_24_s0_/rgg_n_2_24_s0_.cusha2  --arbparam 8934858
-./cusha_sssp --edgelist ../road_usa_/road_usa_.cusha2  --arbparam 15916361
-./cusha_sssp --edgelist ../roadNet-CA_/roadNet-CA_.cusha2  --arbparam 1916604
+./ws_sssp --edgelist ../soc-LiveJournal1_/soc-LiveJournal1_.cusha2  --arbparam 3266740
+./ws_sssp --edgelist ../soc-orkut_/soc-orkut_.cusha2  --arbparam 17047
+./ws_sssp --edgelist ../hollywood-2009_/hollywood-2009_.cusha2  --arbparam 775106
+./ws_sssp --edgelist ../indochina-2004_/indochina-2004_.cusha2  --arbparam 6750856
+./ws_sssp --edgelist ../rmat24_/rmat24_.cusha2  --arbparam 0
+./ws_sssp --edgelist ../kron_g500-logn21_/kron_g500-logn21_.cusha2  --arbparam 495356
+./ws_sssp --edgelist ../rgg_n_2_24_s0_/rgg_n_2_24_s0_.cusha2  --arbparam 8934858
+./ws_sssp --edgelist ../road_usa_/road_usa_.cusha2  --arbparam 15916361
+./ws_sssp --edgelist ../roadNet-CA_/roadNet-CA_.cusha2  --arbparam 1916604
 
 
 echo "WS PR (Original numbering)"
 for j in soc-LiveJournal1 soc-orkut hollywood-2009 indochina-2004 rmat24 road_usa rgg_n_2_24_s0 kron_g500-logn21 roadNet-CA
 do
-./cusha_pr --edgelist ../${j}/${j}.cusha3  
+./ws_pr --edgelist ../${j}/${j}.cusha3  
 done
 echo "WS PR (Random numbering)"
-./cusha_pr --edgelist ../soc-LiveJournal1_/soc-LiveJournal1_.cusha3  --arbparam 3266740
-./cusha_pr --edgelist ../soc-orkut_/soc-orkut_.cusha3  --arbparam 17047
-./cusha_pr --edgelist ../hollywood-2009_/hollywood-2009_.cusha3  --arbparam 775106
-./cusha_pr --edgelist ../indochina-2004_/indochina-2004_.cusha3  --arbparam 6750856
-./cusha_pr --edgelist ../rmat24_/rmat24_.cusha3  --arbparam 0
-./cusha_pr --edgelist ../kron_g500-logn21_/kron_g500-logn21_.cusha3  --arbparam 495356
-./cusha_pr --edgelist ../rgg_n_2_24_s0_/rgg_n_2_24_s0_.cusha3  --arbparam 8934858
-./cusha_pr --edgelist ../road_usa_/road_usa_.cusha3  --arbparam 15916361
-./cusha_pr --edgelist ../roadNet-CA_/roadNet-CA_.cusha3  --arbparam 1916604
+./ws_pr --edgelist ../soc-LiveJournal1_/soc-LiveJournal1_.cusha3  --arbparam 3266740
+./ws_pr --edgelist ../soc-orkut_/soc-orkut_.cusha3  --arbparam 17047
+./ws_pr --edgelist ../hollywood-2009_/hollywood-2009_.cusha3  --arbparam 775106
+./ws_pr --edgelist ../indochina-2004_/indochina-2004_.cusha3  --arbparam 6750856
+./ws_pr --edgelist ../rmat24_/rmat24_.cusha3  --arbparam 0
+./ws_pr --edgelist ../kron_g500-logn21_/kron_g500-logn21_.cusha3  --arbparam 495356
+./ws_pr --edgelist ../rgg_n_2_24_s0_/rgg_n_2_24_s0_.cusha3  --arbparam 8934858
+./ws_pr --edgelist ../road_usa_/road_usa_.cusha3  --arbparam 15916361
+./ws_pr --edgelist ../roadNet-CA_/roadNet-CA_.cusha3  --arbparam 1916604
 
 cd ..
 cd ..
@@ -264,8 +264,8 @@ cd ..
 #######################
 cd ppopp17-artifact/code/groute/build
 
-./bfs -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-LiveJournal1.gr -output /tmp/bfstmp.txt
-./bfs -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-orkut.gr -output /tmp/bfstmp.txt
+./bfs -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/bfstmp.txt
+./bfs -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-orkut/soc-orkut.gr -output /tmp/bfstmp.txt
 ./bfs -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/hollywood-2009/hollywood-2009.gr -output /tmp/bfstmp.txt
 ./bfs -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/indochina-2004/indochina-2004.gr -output /tmp/bfstmp.txt
 ./bfs -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/rmat24/rmat24.gr -output /tmp/bfstmp.txt
@@ -285,8 +285,8 @@ cd ppopp17-artifact/code/groute/build
 ./bfs -num_gpus 1 -startwith 1 --prio_delta=128 -source_node=495356 -graphfile ../../../../groute_data/renumber/road_usa/road_usa.gr -output /tmp/bfstmp.txt
 ./bfs -num_gpus 1 -startwith 1 --prio_delta=64 -source_node=1916604 -graphfile ../../../../groute_data/renumber/roadNet-CA/roadNet-CA.gr -output /tmp/bfstmp.txt
 
-./sssp -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-LiveJournal1.gr -output /tmp/sssptmp.txt
-./sssp -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-orkut.gr -output /tmp/sssptmp.txt
+./sssp -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/sssptmp.txt
+./sssp -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-orkut/soc-orkut.gr -output /tmp/sssptmp.txt
 ./sssp -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/hollywood-2009/hollywood-2009.gr -output /tmp/sssptmp.txt
 ./sssp -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/indochina-2004/indochina-2004.gr -output /tmp/sssptmp.txt
 ./sssp -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/rmat24/rmat24.gr -output /tmp/sssptmp.txt
@@ -306,8 +306,8 @@ cd ppopp17-artifact/code/groute/build
 ./sssp -num_gpus 1 -startwith 1 --prio_delta=128 -source_node=495356 -graphfile ../../../../groute_data/renumber/road_usa/road_usa.gr -output /tmp/sssptmp.txt
 ./sssp -num_gpus 1 -startwith 1 --prio_delta=64 -source_node=1916604 -graphfile ../../../../groute_data/renumber/roadNet-CA/roadNet-CA.gr -output /tmp/sssptmp.txt
 
-./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-LiveJournal1.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-orkut.gr -output /tmp/cctmp.txt
+./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/cctmp.txt
+./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-orkut/soc-orkut.gr -output /tmp/cctmp.txt
 ./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/hollywood-2009/hollywood-2009.gr -output /tmp/cctmp.txt
 ./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/indochina-2004/indochina-2004.gr -output /tmp/cctmp.txt
 ./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/rmat24/rmat24.gr -output /tmp/cctmp.txt
@@ -327,8 +327,8 @@ cd ppopp17-artifact/code/groute/build
 ./cc -num_gpus 1 -startwith 1 --prio_delta=128 -source_node=495356 -graphfile ../../../../groute_data/renumber/road_usa/road_usa.gr -output /tmp/cctmp.txt
 ./cc -num_gpus 1 -startwith 1 --prio_delta=64 -source_node=1916604 -graphfile ../../../../groute_data/renumber/roadNet-CA/roadNet-CA.gr -output /tmp/cctmp.txt
 
-./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-LiveJournal1.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-orkut.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-orkut/soc-orkut.gr -output /tmp/prtmp.txt
 ./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/hollywood-2009/hollywood-2009.gr -output /tmp/prtmp.txt
 ./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/indochina-2004/indochina-2004.gr -output /tmp/prtmp.txt
 ./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/rmat24/rmat24.gr -output /tmp/prtmp.txt
@@ -357,124 +357,125 @@ cd ppopp17-artifact/code/groute/build
 cd ..
 cd ..
 #######################
+#ppopp17-artifact/code/gunrock/build/bin
 cd gunrock/build/bin
 
 export BC_SETTING="--iteration-num=10"
 
-./bc market ../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
-./bc market ../../../soc-orkut/soc-orkut.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
-./bc market ../../../hollywood-2009/hollywood-2009.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
-./bc market ../../../indochina-2004/indochina-2004.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" 
-./bc market ../../../rmat24/rmat24.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./bc market ../../../kron_g500-logn21/kron_g500-logn21.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./bc market ../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${BC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./bc market ../../../road_usa/road_usa.mtx ${BC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./bc market ../../../roadNet-CA/roadNet-CA.mtx ${BC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./bc market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
+./bc market ../../../../../soc-orkut/soc-orkut.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
+./bc market ../../../../../hollywood-2009/hollywood-2009.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
+./bc market ../../../../../indochina-2004/indochina-2004.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" 
+./bc market ../../../../../rmat24/rmat24.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
+./bc market ../../../../../kron_g500-logn21/kron_g500-logn21.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
+./bc market ../../../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${BC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./bc market ../../../../../road_usa/road_usa.mtx ${BC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./bc market ../../../../../roadNet-CA/roadNet-CA.mtx ${BC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 
-./bc market ../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
-./bc market ../../../soc-orkut_/soc-orkut_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
-./bc market ../../../hollywood-2009_/hollywood-2009_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
-./bc market ../../../indochina-2004_/indochina-2004_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  --src=6750856
-./bc market ../../../rmat24_/rmat24_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  --src=0
-./bc market ../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --src=15916361
-./bc market ../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${BC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=8934858
-./bc market ../../../road_usa_/road_usa_.mtx ${BC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=495356
-./bc market ../../../roadNet-CA_/roadNet-CA_.mtx ${BC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604
+./bc market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
+./bc market ../../../../../soc-orkut_/soc-orkut_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
+./bc market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
+./bc market ../../../../../indochina-2004_/indochina-2004_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  --src=6750856
+./bc market ../../../../../rmat24_/rmat24_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  --src=0
+./bc market ../../../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --src=15916361
+./bc market ../../../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${BC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=8934858
+./bc market ../../../../../road_usa_/road_usa_.mtx ${BC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=495356
+./bc market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${BC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604
 
 export CC_SETTING="--iteration-num=10"
 
-./cc market ../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
-./cc market ../../../soc-orkut/soc-orkut.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
-./cc market ../../../hollywood-2009/hollywood-2009.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
-./cc market ../../../indochina-2004/indochina-2004.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" 
-./cc market ../../../rmat24/rmat24.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./cc market ../../../kron_g500-logn21/kron_g500-logn21.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./cc market ../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./cc market ../../../road_usa/road_usa.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./cc market ../../../roadNet-CA/roadNet-CA.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./cc market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
+./cc market ../../../../../soc-orkut/soc-orkut.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
+./cc market ../../../../../hollywood-2009/hollywood-2009.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
+./cc market ../../../../../indochina-2004/indochina-2004.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" 
+./cc market ../../../../../rmat24/rmat24.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
+./cc market ../../../../../kron_g500-logn21/kron_g500-logn21.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
+./cc market ../../../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./cc market ../../../../../road_usa/road_usa.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./cc market ../../../../../roadNet-CA/roadNet-CA.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 
-./cc market ../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
-./cc market ../../../soc-orkut_/soc-orkut_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
-./cc market ../../../hollywood-2009_/hollywood-2009_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
-./cc market ../../../indochina-2004_/indochina-2004_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  --src=6750856
-./cc market ../../../rmat24_/rmat24_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  --src=0
-./cc market ../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --src=15916361
-./cc market ../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=8934858
-./cc market ../../../road_usa_/road_usa_.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=495356
-./cc market ../../../roadNet-CA_/roadNet-CA_.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604
+./cc market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
+./cc market ../../../../../soc-orkut_/soc-orkut_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
+./cc market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
+./cc market ../../../../../indochina-2004_/indochina-2004_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  --src=6750856
+./cc market ../../../../../rmat24_/rmat24_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  --src=0
+./cc market ../../../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --src=15916361
+./cc market ../../../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=8934858
+./cc market ../../../../../road_usa_/road_usa_.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=495356
+./cc market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604
 
 
 
 export BFS_SETTING="--undirected --idempotence --queue-sizing=6.5 --in-sizing=4 --iteration-num=10"
 
-./bfs market ../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
-./bfs market ../../../soc-orkut/soc-orkut.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
-./bfs market ../../../hollywood-2009/hollywood-2009.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
-./bfs market ../../../indochina-2004/indochina-2004.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" 
-./bfs market ../../../rmat24/rmat24.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./bfs market ../../../kron_g500-logn21/kron_g500-logn21.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./bfs market ../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${BFS_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./bfs market ../../../road_usa/road_usa.mtx ${BFS_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./bfs market ../../../roadNet-CA/roadNet-CA.mtx ${BFS_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./bfs market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
+./bfs market ../../../../../soc-orkut/soc-orkut.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
+./bfs market ../../../../../hollywood-2009/hollywood-2009.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
+./bfs market ../../../../../indochina-2004/indochina-2004.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" 
+./bfs market ../../../../../rmat24/rmat24.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
+./bfs market ../../../../../kron_g500-logn21/kron_g500-logn21.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
+./bfs market ../../../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${BFS_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./bfs market ../../../../../road_usa/road_usa.mtx ${BFS_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./bfs market ../../../../../roadNet-CA/roadNet-CA.mtx ${BFS_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 
-./bfs market ../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
-./bfs market ../../../soc-orkut_/soc-orkut_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
-./bfs market ../../../hollywood-2009_/hollywood-2009_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
-./bfs market ../../../indochina-2004_/indochina-2004_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  --src=6750856
-./bfs market ../../../rmat24_/rmat24_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  --src=0
-./bfs market ../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --src=15916361
-./bfs market ../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${BFS_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=8934858
-./bfs market ../../../road_usa_/road_usa_.mtx ${BFS_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=495356
-./bfs market ../../../roadNet-CA_/roadNet-CA_.mtx ${BFS_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604
+./bfs market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
+./bfs market ../../../../../soc-orkut_/soc-orkut_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
+./bfs market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
+./bfs market ../../../../../indochina-2004_/indochina-2004_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  --src=6750856
+./bfs market ../../../../../rmat24_/rmat24_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  --src=0
+./bfs market ../../../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --src=15916361
+./bfs market ../../../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${BFS_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=8934858
+./bfs market ../../../../../road_usa_/road_usa_.mtx ${BFS_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=495356
+./bfs market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${BFS_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604
 
 export PR_SETTING="--iteration-num=10"
 
-./pr market ../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
-./pr market ../../../soc-orkut/soc-orkut.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
-./pr market ../../../hollywood-2009/hollywood-2009.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
-./pr market ../../../indochina-2004/indochina-2004.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" 
-./pr market ../../../rmat24/rmat24.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./pr market ../../../kron_g500-logn21/kron_g500-logn21.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./pr market ../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./pr market ../../../road_usa/road_usa.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./pr market ../../../roadNet-CA/roadNet-CA.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./pr market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
+./pr market ../../../../../soc-orkut/soc-orkut.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
+./pr market ../../../../../hollywood-2009/hollywood-2009.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
+./pr market ../../../../../indochina-2004/indochina-2004.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" 
+./pr market ../../../../../rmat24/rmat24.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
+./pr market ../../../../../kron_g500-logn21/kron_g500-logn21.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
+./pr market ../../../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./pr market ../../../../../road_usa/road_usa.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./pr market ../../../../../roadNet-CA/roadNet-CA.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 
-./pr market ../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
-./pr market ../../../soc-orkut_/soc-orkut_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
-./pr market ../../../hollywood-2009_/hollywood-2009_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
-./pr market ../../../indochina-2004_/indochina-2004_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  --src=6750856
-./pr market ../../../rmat24_/rmat24_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  --src=0
-./pr market ../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --src=15916361
-./pr market ../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=8934858
-./pr market ../../../road_usa_/road_usa_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=495356
-./pr market ../../../roadNet-CA_/roadNet-CA_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604
+./pr market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
+./pr market ../../../../../soc-orkut_/soc-orkut_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
+./pr market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
+./pr market ../../../../../indochina-2004_/indochina-2004_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  --src=6750856
+./pr market ../../../../../rmat24_/rmat24_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  --src=0
+./pr market ../../../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --src=15916361
+./pr market ../../../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=8934858
+./pr market ../../../../../road_usa_/road_usa_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=495356
+./pr market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604
 
 export SSSP_SETTING="--undirected --iteration-num=10 --quick"
 
-./sssp market ../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
-./sssp market ../../../soc-orkut/soc-orkut.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
-./sssp market ../../../hollywood-2009/hollywood-2009.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
-./sssp market ../../../indochina-2004/indochina-2004.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" 
-./sssp market ../../../rmat24/rmat24.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./sssp market ../../../kron_g500-logn21/kron_g500-logn21.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./sssp market ../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${SSSP_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./sssp market ../../../road_usa/road_usa.mtx ${SSSP_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./sssp market ../../../roadNet-CA/roadNet-CA.mtx ${SSSP_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./sssp market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
+./sssp market ../../../../../soc-orkut/soc-orkut.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
+./sssp market ../../../../../hollywood-2009/hollywood-2009.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
+./sssp market ../../../../../indochina-2004/indochina-2004.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" 
+./sssp market ../../../../../rmat24/rmat24.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
+./sssp market ../../../../../kron_g500-logn21/kron_g500-logn21.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
+./sssp market ../../../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${SSSP_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./sssp market ../../../../../road_usa/road_usa.mtx ${SSSP_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./sssp market ../../../../../roadNet-CA/roadNet-CA.mtx ${SSSP_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 
-./sssp market ../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
-./sssp market ../../../soc-orkut_/soc-orkut_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
-./sssp market ../../../hollywood-2009_/hollywood-2009_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
-./sssp market ../../../indochina-2004_/indochina-2004_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  --src=6750856
-./sssp market ../../../rmat24_/rmat24_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  --src=0
-./sssp market ../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --src=15916361
-./sssp market ../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=8934858
-./sssp market ../../../road_usa_/road_usa_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=495356
-./sssp market ../../../roadNet-CA_/roadNet-CA_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604
+./sssp market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
+./sssp market ../../../../../soc-orkut_/soc-orkut_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
+./sssp market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
+./sssp market ../../../../../indochina-2004_/indochina-2004_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  --src=6750856
+./sssp market ../../../../../rmat24_/rmat24_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  --src=0
+./sssp market ../../../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --src=15916361
+./sssp market ../../../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=8934858
+./sssp market ../../../../../road_usa_/road_usa_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=495356
+./sssp market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604
 
 
 cd ..
 cd ..
 cd ..
 cd ..
-
+cd ..
 
