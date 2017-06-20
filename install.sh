@@ -1,3 +1,5 @@
+#!/bin/bash
+
 tar -xvf pack.tar.gz
 
 echo "Install CUDPP"
