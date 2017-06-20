@@ -69,7 +69,7 @@ cat groute_data.tar.gz* > groute_data.tar.gz
 tar -xvf groute_data.tar.gz
 rm groute_data.tar.gz*
 
-tar -xvf pack.tar.gz
+#tar -xvf pack.tar.gz
 
 
 ################################
