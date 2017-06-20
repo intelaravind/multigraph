@@ -64,6 +64,12 @@ cd ..
 
 
 ##########
+mkdir ppopp17-artifact
+mkdir ppopp17-artifact/code
+mkdir ppopp17-artifact/code/gunrock
+mkdir ppopp17-artifact/code/gunrock/gunrock
+mkdir ppopp17-artifact/code/gunrock/gunrock/app
+cp -R prt ppopp17-artifact/code/gunrock/gunrock/app
 
 cp groute_setup.sh ppopp17-artifact
 cd ppopp17-artifact
