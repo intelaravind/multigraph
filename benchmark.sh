@@ -313,52 +313,52 @@ echo "Groute SSSP(Random numbering)"
 
 
 echo "Groute CC(Original numbering)"
-./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-orkut/soc-orkut.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/hollywood-2009/hollywood-2009.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/indochina-2004/indochina-2004.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/rmat24/rmat24.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/kron_g500-logn21/kron_g500-logn21.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=32 -source_node=0 -graphfile ../../../../groute_data/original/rgg_n_2_24_s0/rgg_n_2_24_s0.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=128 -source_node=0 -graphfile ../../../../groute_data/original/road_usa/road_usa.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=64 -source_node=0 -graphfile ../../../../groute_data/original/roadNet-CA/roadNet-CA.gr -output /tmp/cctmp.txt
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/original/soc-LiveJournal1/soc-LiveJournal1.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/original/soc-orkut/soc-orkut.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/original/hollywood-2009/hollywood-2009.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/original/indochina-2004/indochina-2004.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/original/rmat24/rmat24.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/original/kron_g500-logn21/kron_g500-logn21.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/original/rgg_n_2_24_s0/rgg_n_2_24_s0.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/original/road_usa/road_usa.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/original/roadNet-CA/roadNet-CA.gr 
 
 
 echo "Groute CC(Random numbering)"
-./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=3266740 -graphfile ../../../../groute_data/renumber/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=17047 -graphfile ../../../../groute_data/renumber/soc-orkut/soc-orkut.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=775106 -graphfile ../../../../groute_data/renumber/hollywood-2009/hollywood-2009.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=6750856 -graphfile ../../../../groute_data/renumber/indochina-2004/indochina-2004.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/renumber/rmat24/rmat24.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=15916361 -graphfile ../../../../groute_data/renumber/kron_g500-logn21/kron_g500-logn21.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=32 -source_node=8934858 -graphfile ../../../../groute_data/renumber/rgg_n_2_24_s0/rgg_n_2_24_s0.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=128 -source_node=495356 -graphfile ../../../../groute_data/renumber/road_usa/road_usa.gr -output /tmp/cctmp.txt
-./cc -num_gpus 1 -startwith 1 --prio_delta=64 -source_node=1916604 -graphfile ../../../../groute_data/renumber/roadNet-CA/roadNet-CA.gr -output /tmp/cctmp.txt
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/renumber/soc-LiveJournal1/soc-LiveJournal1.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/renumber/soc-orkut/soc-orkut.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/renumber/hollywood-2009/hollywood-2009.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/renumber/indochina-2004/indochina-2004.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/renumber/rmat24/rmat24.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/renumber/kron_g500-logn21/kron_g500-logn21.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/renumber/rgg_n_2_24_s0/rgg_n_2_24_s0.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/renumber/road_usa/road_usa.gr 
+./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/renumber/roadNet-CA/roadNet-CA.gr 
 
 
 
 echo "Groute PR(Original numbering)"
-./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-orkut/soc-orkut.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/hollywood-2009/hollywood-2009.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/indochina-2004/indochina-2004.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/rmat24/rmat24.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/kron_g500-logn21/kron_g500-logn21.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=32 -source_node=0 -graphfile ../../../../groute_data/original/rgg_n_2_24_s0/rgg_n_2_24_s0.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=128 -source_node=0 -graphfile ../../../../groute_data/original/road_usa/road_usa.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=64 -source_node=0 -graphfile ../../../../groute_data/original/roadNet-CA/roadNet-CA.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/original/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/original/soc-orkut/soc-orkut.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/original/hollywood-2009/hollywood-2009.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/original/indochina-2004/indochina-2004.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/original/rmat24/rmat24.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/original/kron_g500-logn21/kron_g500-logn21.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=32 -graphfile ../../../../groute_data/original/rgg_n_2_24_s0/rgg_n_2_24_s0.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=128 -graphfile ../../../../groute_data/original/road_usa/road_usa.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=64 -graphfile ../../../../groute_data/original/roadNet-CA/roadNet-CA.gr -output /tmp/prtmp.txt
 
 
 echo "Groute PR(Random numbering)"
-./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=3266740 -graphfile ../../../../groute_data/renumber/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=17047 -graphfile ../../../../groute_data/renumber/soc-orkut/soc-orkut.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=775106 -graphfile ../../../../groute_data/renumber/hollywood-2009/hollywood-2009.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=6750856 -graphfile ../../../../groute_data/renumber/indochina-2004/indochina-2004.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/renumber/rmat24/rmat24.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=15916361 -graphfile ../../../../groute_data/renumber/kron_g500-logn21/kron_g500-logn21.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=32 -source_node=8934858 -graphfile ../../../../groute_data/renumber/rgg_n_2_24_s0/rgg_n_2_24_s0.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=128 -source_node=495356 -graphfile ../../../../groute_data/renumber/road_usa/road_usa.gr -output /tmp/prtmp.txt
-./pr -num_gpus 1 -startwith 1 --prio_delta=64 -source_node=1916604 -graphfile ../../../../groute_data/renumber/roadNet-CA/roadNet-CA.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/renumber/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/renumber/soc-orkut/soc-orkut.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/renumber/hollywood-2009/hollywood-2009.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/renumber/indochina-2004/indochina-2004.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/renumber/rmat24/rmat24.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/renumber/kron_g500-logn21/kron_g500-logn21.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=32  -graphfile ../../../../groute_data/renumber/rgg_n_2_24_s0/rgg_n_2_24_s0.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=128 -graphfile ../../../../groute_data/renumber/road_usa/road_usa.gr -output /tmp/prtmp.txt
+./pr -num_gpus 1 -startwith 1 --prio_delta=64  -graphfile ../../../../groute_data/renumber/roadNet-CA/roadNet-CA.gr -output /tmp/prtmp.txt
 
 
 
