@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export CUDPP_DIR=./cudpp
 
 export CUDPP_LIB=$CUDPP_DIR/lib
