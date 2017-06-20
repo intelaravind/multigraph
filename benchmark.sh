@@ -264,6 +264,7 @@ cd ..
 #######################
 cd ppopp17-artifact/code/groute/build
 
+echo "Groute BFS(Original numbering)"
 ./bfs -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/bfstmp.txt
 ./bfs -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-orkut/soc-orkut.gr -output /tmp/bfstmp.txt
 ./bfs -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/hollywood-2009/hollywood-2009.gr -output /tmp/bfstmp.txt
@@ -275,6 +276,7 @@ cd ppopp17-artifact/code/groute/build
 ./bfs -num_gpus 1 -startwith 1 --prio_delta=64 -source_node=0 -graphfile ../../../../groute_data/original/roadNet-CA/roadNet-CA.gr -output /tmp/bfstmp.txt
 
 
+echo "Groute BFS(Random numbering)"
 ./bfs -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=3266740 -graphfile ../../../../groute_data/renumber/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/bfstmp.txt
 ./bfs -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=17047 -graphfile ../../../../groute_data/renumber/soc-orkut/soc-orkut.gr -output /tmp/bfstmp.txt
 ./bfs -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=775106 -graphfile ../../../../groute_data/renumber/hollywood-2009/hollywood-2009.gr -output /tmp/bfstmp.txt
@@ -285,6 +287,8 @@ cd ppopp17-artifact/code/groute/build
 ./bfs -num_gpus 1 -startwith 1 --prio_delta=128 -source_node=495356 -graphfile ../../../../groute_data/renumber/road_usa/road_usa.gr -output /tmp/bfstmp.txt
 ./bfs -num_gpus 1 -startwith 1 --prio_delta=64 -source_node=1916604 -graphfile ../../../../groute_data/renumber/roadNet-CA/roadNet-CA.gr -output /tmp/bfstmp.txt
 
+
+echo "Groute SSSP(Original numbering)"
 ./sssp -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/sssptmp.txt
 ./sssp -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-orkut/soc-orkut.gr -output /tmp/sssptmp.txt
 ./sssp -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/hollywood-2009/hollywood-2009.gr -output /tmp/sssptmp.txt
@@ -296,6 +300,7 @@ cd ppopp17-artifact/code/groute/build
 ./sssp -num_gpus 1 -startwith 1 --prio_delta=64 -source_node=0 -graphfile ../../../../groute_data/original/roadNet-CA/roadNet-CA.gr -output /tmp/sssptmp.txt
 
 
+echo "Groute SSSP(Random numbering)"
 ./sssp -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=3266740 -graphfile ../../../../groute_data/renumber/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/sssptmp.txt
 ./sssp -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=17047 -graphfile ../../../../groute_data/renumber/soc-orkut/soc-orkut.gr -output /tmp/sssptmp.txt
 ./sssp -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=775106 -graphfile ../../../../groute_data/renumber/hollywood-2009/hollywood-2009.gr -output /tmp/sssptmp.txt
@@ -306,6 +311,8 @@ cd ppopp17-artifact/code/groute/build
 ./sssp -num_gpus 1 -startwith 1 --prio_delta=128 -source_node=495356 -graphfile ../../../../groute_data/renumber/road_usa/road_usa.gr -output /tmp/sssptmp.txt
 ./sssp -num_gpus 1 -startwith 1 --prio_delta=64 -source_node=1916604 -graphfile ../../../../groute_data/renumber/roadNet-CA/roadNet-CA.gr -output /tmp/sssptmp.txt
 
+
+echo "Groute CC(Original numbering)"
 ./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/cctmp.txt
 ./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-orkut/soc-orkut.gr -output /tmp/cctmp.txt
 ./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/hollywood-2009/hollywood-2009.gr -output /tmp/cctmp.txt
@@ -317,6 +324,7 @@ cd ppopp17-artifact/code/groute/build
 ./cc -num_gpus 1 -startwith 1 --prio_delta=64 -source_node=0 -graphfile ../../../../groute_data/original/roadNet-CA/roadNet-CA.gr -output /tmp/cctmp.txt
 
 
+echo "Groute CC(Random numbering)"
 ./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=3266740 -graphfile ../../../../groute_data/renumber/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/cctmp.txt
 ./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=17047 -graphfile ../../../../groute_data/renumber/soc-orkut/soc-orkut.gr -output /tmp/cctmp.txt
 ./cc -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=775106 -graphfile ../../../../groute_data/renumber/hollywood-2009/hollywood-2009.gr -output /tmp/cctmp.txt
@@ -327,6 +335,9 @@ cd ppopp17-artifact/code/groute/build
 ./cc -num_gpus 1 -startwith 1 --prio_delta=128 -source_node=495356 -graphfile ../../../../groute_data/renumber/road_usa/road_usa.gr -output /tmp/cctmp.txt
 ./cc -num_gpus 1 -startwith 1 --prio_delta=64 -source_node=1916604 -graphfile ../../../../groute_data/renumber/roadNet-CA/roadNet-CA.gr -output /tmp/cctmp.txt
 
+
+
+echo "Groute PR(Original numbering)"
 ./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/prtmp.txt
 ./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/soc-orkut/soc-orkut.gr -output /tmp/prtmp.txt
 ./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=0 -graphfile ../../../../groute_data/original/hollywood-2009/hollywood-2009.gr -output /tmp/prtmp.txt
@@ -338,6 +349,7 @@ cd ppopp17-artifact/code/groute/build
 ./pr -num_gpus 1 -startwith 1 --prio_delta=64 -source_node=0 -graphfile ../../../../groute_data/original/roadNet-CA/roadNet-CA.gr -output /tmp/prtmp.txt
 
 
+echo "Groute PR(Random numbering)"
 ./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=3266740 -graphfile ../../../../groute_data/renumber/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/prtmp.txt
 ./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=17047 -graphfile ../../../../groute_data/renumber/soc-orkut/soc-orkut.gr -output /tmp/prtmp.txt
 ./pr -num_gpus 1 -startwith 1 --prio_delta=100 -source_node=775106 -graphfile ../../../../groute_data/renumber/hollywood-2009/hollywood-2009.gr -output /tmp/prtmp.txt
@@ -362,6 +374,8 @@ cd gunrock/build/bin
 
 export BC_SETTING="--iteration-num=10"
 
+
+echo "Gunrock BC(Original numbering)"
 ./bc market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
 ./bc market ../../../../../soc-orkut/soc-orkut.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
 ./bc market ../../../../../hollywood-2009/hollywood-2009.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
@@ -372,6 +386,7 @@ export BC_SETTING="--iteration-num=10"
 ./bc market ../../../../../road_usa/road_usa.mtx ${BC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 ./bc market ../../../../../roadNet-CA/roadNet-CA.mtx ${BC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 
+echo "Gunrock BC(Random numbering)"
 ./bc market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
 ./bc market ../../../../../soc-orkut_/soc-orkut_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
 ./bc market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
@@ -384,6 +399,7 @@ export BC_SETTING="--iteration-num=10"
 
 export CC_SETTING="--iteration-num=10"
 
+echo "Gunrock CC(Original numbering)"
 ./cc market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
 ./cc market ../../../../../soc-orkut/soc-orkut.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
 ./cc market ../../../../../hollywood-2009/hollywood-2009.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
@@ -394,6 +410,8 @@ export CC_SETTING="--iteration-num=10"
 ./cc market ../../../../../road_usa/road_usa.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 ./cc market ../../../../../roadNet-CA/roadNet-CA.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 
+
+echo "Gunrock CC(Random numbering)"
 ./cc market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
 ./cc market ../../../../../soc-orkut_/soc-orkut_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
 ./cc market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
@@ -408,6 +426,9 @@ export CC_SETTING="--iteration-num=10"
 
 export BFS_SETTING="--undirected --idempotence --queue-sizing=6.5 --in-sizing=4 --iteration-num=10"
 
+
+
+echo "Gunrock BFS(Original numbering)"
 ./bfs market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
 ./bfs market ../../../../../soc-orkut/soc-orkut.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
 ./bfs market ../../../../../hollywood-2009/hollywood-2009.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
@@ -418,6 +439,7 @@ export BFS_SETTING="--undirected --idempotence --queue-sizing=6.5 --in-sizing=4 
 ./bfs market ../../../../../road_usa/road_usa.mtx ${BFS_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 ./bfs market ../../../../../roadNet-CA/roadNet-CA.mtx ${BFS_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 
+echo "Gunrock BFS(Random numbering)"
 ./bfs market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
 ./bfs market ../../../../../soc-orkut_/soc-orkut_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
 ./bfs market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${BFS_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
@@ -430,6 +452,7 @@ export BFS_SETTING="--undirected --idempotence --queue-sizing=6.5 --in-sizing=4 
 
 export PR_SETTING="--iteration-num=10"
 
+echo "Gunrock PR_DATA_DRIVEN(Original numbering)"
 ./pr market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
 ./pr market ../../../../../soc-orkut/soc-orkut.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
 ./pr market ../../../../../hollywood-2009/hollywood-2009.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
@@ -440,6 +463,7 @@ export PR_SETTING="--iteration-num=10"
 ./pr market ../../../../../road_usa/road_usa.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 ./pr market ../../../../../roadNet-CA/roadNet-CA.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 
+echo "Gunrock PR_DATA_DRIVEN(Random numbering)"
 ./pr market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
 ./pr market ../../../../../soc-orkut_/soc-orkut_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
 ./pr market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
@@ -451,25 +475,27 @@ export PR_SETTING="--iteration-num=10"
 ./pr market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604
 
 
-./prt market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
-./prt market ../../../../../soc-orkut/soc-orkut.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
-./prt market ../../../../../hollywood-2009/hollywood-2009.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
-./prt market ../../../../../indochina-2004/indochina-2004.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" 
-./prt market ../../../../../rmat24/rmat24.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./prt market ../../../../../kron_g500-logn21/kron_g500-logn21.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./prt market ../../../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./prt market ../../../../../road_usa/road_usa.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./prt market ../../../../../roadNet-CA/roadNet-CA.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+echo "Gunrock PR_TOPOLOGY_DRIVEN(Original numbering)"
+./prt market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --max-iter=82 
+./prt market ../../../../../soc-orkut/soc-orkut.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --max-iter=97
+./prt market ../../../../../hollywood-2009/hollywood-2009.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --max-iter=87
+./prt market ../../../../../indochina-2004/indochina-2004.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" --max-iter=134
+./prt market ../../../../../rmat24/rmat24.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --max-iter=70
+./prt market ../../../../../kron_g500-logn21/kron_g500-logn21.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --max-iter=44 
+./prt market ../../../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --max-iter=95
+./prt market ../../../../../road_usa/road_usa.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --max-iter=84
+./prt market ../../../../../roadNet-CA/roadNet-CA.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --max-iter=48
 
-./prt market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
-./prt market ../../../../../soc-orkut_/soc-orkut_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
-./prt market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
-./prt market ../../../../../indochina-2004_/indochina-2004_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  --src=6750856
-./prt market ../../../../../rmat24_/rmat24_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  --src=0
-./prt market ../../../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --src=15916361
-./prt market ../../../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=8934858
-./prt market ../../../../../road_usa_/road_usa_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=495356
-./prt market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604
+echo "Gunrock PR_TOPOLOGY_DRIVEN(Random numbering)"
+./prt market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 --max-iter=82
+./prt market ../../../../../soc-orkut_/soc-orkut_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047 --max-iter=97
+./prt market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106 --max-iter=87
+./prt market ../../../../../indochina-2004_/indochina-2004_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  --src=6750856 --max-iter=134
+./prt market ../../../../../rmat24_/rmat24_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  --src=0 --max-iter=70
+./prt market ../../../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --src=15916361 --max-iter=44
+./prt market ../../../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=8934858 --max-iter=95
+./prt market ../../../../../road_usa_/road_usa_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=495356 --max-iter=84
+./prt market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604 --max-iter=48
 
 
 
@@ -478,6 +504,7 @@ export PR_SETTING="--iteration-num=10"
 
 export SSSP_SETTING="--undirected --iteration-num=10 --quick"
 
+echo "Gunrock SSSP(Original numbering)"
 ./sssp market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
 ./sssp market ../../../../../soc-orkut/soc-orkut.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
 ./sssp market ../../../../../hollywood-2009/hollywood-2009.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
@@ -488,6 +515,7 @@ export SSSP_SETTING="--undirected --iteration-num=10 --quick"
 ./sssp market ../../../../../road_usa/road_usa.mtx ${SSSP_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 ./sssp market ../../../../../roadNet-CA/roadNet-CA.mtx ${SSSP_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
 
+echo "Gunrock SSSP(Random numbering)"
 ./sssp market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
 ./sssp market ../../../../../soc-orkut_/soc-orkut_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
 ./sssp market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
