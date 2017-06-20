@@ -9,6 +9,7 @@ cmake ..
 make
 
 cd ..
+cd ..
 
 export CUDPP_DIR=./cudpp
 
