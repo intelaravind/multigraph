@@ -450,6 +450,32 @@ export PR_SETTING="--iteration-num=10"
 ./pr market ../../../../../road_usa_/road_usa_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=495356
 ./pr market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604
 
+
+./prt market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
+./prt market ../../../../../soc-orkut/soc-orkut.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
+./prt market ../../../../../hollywood-2009/hollywood-2009.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
+./prt market ../../../../../indochina-2004/indochina-2004.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" 
+./prt market ../../../../../rmat24/rmat24.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
+./prt market ../../../../../kron_g500-logn21/kron_g500-logn21.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
+./prt market ../../../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./prt market ../../../../../road_usa/road_usa.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./prt market ../../../../../roadNet-CA/roadNet-CA.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+
+./prt market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --src=3266740 
+./prt market ../../../../../soc-orkut_/soc-orkut_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --src=17047
+./prt market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --src=775106
+./prt market ../../../../../indochina-2004_/indochina-2004_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  --src=6750856
+./prt market ../../../../../rmat24_/rmat24_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  --src=0
+./prt market ../../../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --src=15916361
+./prt market ../../../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=8934858
+./prt market ../../../../../road_usa_/road_usa_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=495356
+./prt market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --src=1916604
+
+
+
+
+
+
 export SSSP_SETTING="--undirected --iteration-num=10 --quick"
 
 ./sssp market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${SSSP_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
