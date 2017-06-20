@@ -11,7 +11,7 @@ make
 cd ..
 cd ..
 
-export CUDPP_DIR=./cudpp
+export CUDPP_DIR=./cudpp/build
 
 export CUDPP_LIB=$CUDPP_DIR/lib
 export CUDPP_INCLUDE=$CUDPP_DIR/include
