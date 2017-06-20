@@ -65,7 +65,7 @@ cd ..
 
 ##########
 
-cp ./pack/groute_setup.sh ppopp17-artifact
+cp groute_setup.sh ppopp17-artifact
 cd ppopp17-artifact
 ./grute_setup.sh
 cd ..
