@@ -25,7 +25,7 @@ tar -xvf kron_g500-logn21.tar.gz
 rm kron_g500-logn21.tar.gz
 
 
-http://www.cise.ufl.edu/research/sparse/MM/DIMACS10/rgg_n_2_24_s0.tar.gz
+wget http://www.cise.ufl.edu/research/sparse/MM/DIMACS10/rgg_n_2_24_s0.tar.gz
 tar -xvf rgg_n_2_24_s0.tar.gz
 rm rgg_n_2_24_s0.tar.gz
 
