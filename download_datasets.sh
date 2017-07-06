@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gcc -O3 -o convert convert.c 
+gcc -O3 -DSYM -o convert convert.c 
 
 wget http://www.cise.ufl.edu/research/sparse/MM/SNAP/soc-LiveJournal1.tar.gz
 tar -xvf soc-LiveJournal1.tar.gz
