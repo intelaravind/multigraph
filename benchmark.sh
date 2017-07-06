@@ -402,27 +402,27 @@ echo "Gunrock BC(Random numbering)"
 export CC_SETTING="--iteration-num=10"
 
 echo "Gunrock CC(Original numbering)"
-./cc market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
-./cc market ../../../../../soc-orkut/soc-orkut.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
-./cc market ../../../../../hollywood-2009/hollywood-2009.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
-./cc market ../../../../../indochina-2004/indochina-2004.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" 
-./cc market ../../../../../rmat24/rmat24.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./cc market ../../../../../kron_g500-logn21/kron_g500-logn21.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./cc market ../../../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./cc market ../../../../../road_usa/road_usa.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./cc market ../../../../../roadNet-CA/roadNet-CA.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./cc market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${CC_SETTING}  
+./cc market ../../../../../soc-orkut/soc-orkut.mtx ${CC_SETTING}  
+./cc market ../../../../../hollywood-2009/hollywood-2009.mtx ${CC_SETTING}  
+./cc market ../../../../../indochina-2004/indochina-2004.mtx ${CC_SETTING}  
+./cc market ../../../../../rmat24/rmat24.mtx ${CC_SETTING}  
+./cc market ../../../../../kron_g500-logn21/kron_g500-logn21.mtx ${CC_SETTING}  
+./cc market ../../../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${CC_SETTING}  
+./cc market ../../../../../road_usa/road_usa.mtx ${CC_SETTING}  
+./cc market ../../../../../roadNet-CA/roadNet-CA.mtx ${CC_SETTING} 
 
 
 echo "Gunrock CC(Random numbering)"
-./cc market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1"  
-./cc market ../../../../../soc-orkut_/soc-orkut_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
-./cc market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
-./cc market ../../../../../indochina-2004_/indochina-2004_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  
-./cc market ../../../../../rmat24_/rmat24_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  
-./cc market ../../../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${CC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./cc market ../../../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./cc market ../../../../../road_usa_/road_usa_.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./cc market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${CC_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./cc market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${CC_SETTING}   
+./cc market ../../../../../soc-orkut_/soc-orkut_.mtx ${CC_SETTING}  
+./cc market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${CC_SETTING}  
+./cc market ../../../../../indochina-2004_/indochina-2004_.mtx ${CC_SETTING}   
+./cc market ../../../../../rmat24_/rmat24_.mtx ${CC_SETTING}  
+./cc market ../../../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${CC_SETTING} 
+./cc market ../../../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${CC_SETTING}  
+./cc market ../../../../../road_usa_/road_usa_.mtx ${CC_SETTING}  
+./cc market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${CC_SETTING}  
 
 
 
@@ -455,51 +455,49 @@ echo "Gunrock BFS(Random numbering)"
 export PR_SETTING="--iteration-num=10"
 
 echo "Gunrock PR_DATA_DRIVEN(Original numbering)"
-./pr market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
-./pr market ../../../../../soc-orkut/soc-orkut.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
-./pr market ../../../../../hollywood-2009/hollywood-2009.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
-./pr market ../../../../../indochina-2004/indochina-2004.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" 
-./pr market ../../../../../rmat24/rmat24.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./pr market ../../../../../kron_g500-logn21/kron_g500-logn21.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./pr market ../../../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./pr market ../../../../../road_usa/road_usa.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./pr market ../../../../../roadNet-CA/roadNet-CA.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./pr market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${PR_SETTING}  
+./pr market ../../../../../soc-orkut/soc-orkut.mtx ${PR_SETTING}   
+./pr market ../../../../../hollywood-2009/hollywood-2009.mtx ${PR_SETTING}  
+./pr market ../../../../../indochina-2004/indochina-2004.mtx ${PR_SETTING}  
+./pr market ../../../../../rmat24/rmat24.mtx ${PR_SETTING}  
+./pr market ../../../../../kron_g500-logn21/kron_g500-logn21.mtx ${PR_SETTING}  
+./pr market ../../../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${PR_SETTING}  
+./pr market ../../../../../road_usa/road_usa.mtx ${PR_SETTING}  
+./pr market ../../../../../roadNet-CA/roadNet-CA.mtx ${PR_SETTING} 
 
 echo "Gunrock PR_DATA_DRIVEN(Random numbering)"
-./pr market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1"  
-./pr market ../../../../../soc-orkut_/soc-orkut_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" 
-./pr market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" 
-./pr market ../../../../../indochina-2004_/indochina-2004_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100"  
-./pr market ../../../../../rmat24_/rmat24_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1"  
-./pr market ../../../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" 
-./pr market ../../../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./pr market ../../../../../road_usa_/road_usa_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
-./pr market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" 
+./pr market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${PR_SETTING}  
+./pr market ../../../../../soc-orkut_/soc-orkut_.mtx ${PR_SETTING}  
+./pr market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${PR_SETTING} 
+./pr market ../../../../../indochina-2004_/indochina-2004_.mtx ${PR_SETTING}  
+./pr market ../../../../../rmat24_/rmat24_.mtx ${PR_SETTING}  
+./pr market ../../../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${PR_SETTING}  
+./pr market ../../../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${PR_SETTING}  
+./pr market ../../../../../road_usa_/road_usa_.mtx ${PR_SETTING} 
+./pr market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${PR_SETTING} 
 
 
 echo "Gunrock PR_TOPOLOGY_DRIVEN(Original numbering)"
-./prt market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --max-iter=82 
-./prt market ../../../../../soc-orkut/soc-orkut.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --max-iter=97
-./prt market ../../../../../hollywood-2009/hollywood-2009.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --max-iter=87
-./prt market ../../../../../indochina-2004/indochina-2004.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" --max-iter=134
-./prt market ../../../../../rmat24/rmat24.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --max-iter=70
-./prt market ../../../../../kron_g500-logn21/kron_g500-logn21.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --max-iter=44 
-./prt market ../../../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --max-iter=95
-./prt market ../../../../../road_usa/road_usa.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --max-iter=84
-./prt market ../../../../../roadNet-CA/roadNet-CA.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --max-iter=48
+./prt market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${PR_SETTING} --max-iter=82 
+./prt market ../../../../../soc-orkut/soc-orkut.mtx ${PR_SETTING} --max-iter=97
+./prt market ../../../../../hollywood-2009/hollywood-2009.mtx ${PR_SETTING} --max-iter=87
+./prt market ../../../../../indochina-2004/indochina-2004.mtx ${PR_SETTING} --max-iter=134
+./prt market ../../../../../rmat24/rmat24.mtx ${PR_SETTING} --max-iter=70
+./prt market ../../../../../kron_g500-logn21/kron_g500-logn21.mtx ${PR_SETTING} --max-iter=44 
+./prt market ../../../../../rgg_n_2_24_s0/rgg_n_2_24_s0.mtx ${PR_SETTING} --max-iter=95
+./prt market ../../../../../road_usa/road_usa.mtx ${PR_SETTING} --max-iter=84
+./prt market ../../../../../roadNet-CA/roadNet-CA.mtx ${PR_SETTING} --max-iter=48
 
 echo "Gunrock PR_TOPOLOGY_DRIVEN(Random numbering)"
-./prt market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" --max-iter=82
-./prt market ../../../../../soc-orkut_/soc-orkut_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.012" --do_b="0.1" --max-iter=97
-./prt market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.006" --do_b="0.1" --max-iter=87
-./prt market ../../../../../indochina-2004_/indochina-2004_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="100" --do_b="100" --max-iter=134
-./prt market ../../../../../rmat24_/rmat24_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --max-iter=70
-./prt market ../../../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${PR_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.00001" --do_b="0.1" --max-iter=44
-./prt market ../../../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --max-iter=95
-./prt market ../../../../../road_usa_/road_usa_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --max-iter=84
-./prt market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${PR_SETTING} --device=0 --traversal-mode="TWC" --do_a="1.0" --do_b="10" --max-iter=48
-
-
+./prt market ../../../../../soc-LiveJournal1_/soc-LiveJournal1_.mtx ${PR_SETTING} --max-iter=82
+./prt market ../../../../../soc-orkut_/soc-orkut_.mtx ${PR_SETTING} --max-iter=97
+./prt market ../../../../../hollywood-2009_/hollywood-2009_.mtx ${PR_SETTING} --max-iter=87
+./prt market ../../../../../indochina-2004_/indochina-2004_.mtx ${PR_SETTING} --max-iter=134
+./prt market ../../../../../rmat24_/rmat24_.mtx ${PR_SETTING} --max-iter=70
+./prt market ../../../../../kron_g500-logn21_/kron_g500-logn21_.mtx ${PR_SETTING} --max-iter=44
+./prt market ../../../../../rgg_n_2_24_s0_/rgg_n_2_24_s0_.mtx ${PR_SETTING} --max-iter=95
+./prt market ../../../../../road_usa_/road_usa_.mtx ${PR_SETTING} --max-iter=84
+./prt market ../../../../../roadNet-CA_/roadNet-CA_.mtx ${PR_SETTING} --max-iter=48
 
 
 
