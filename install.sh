@@ -11,6 +11,7 @@ elif [ "$1" = "multigraph" ]
 then 
 
 	echo "Install CUDPP"
+	tar -xvf pack.tar.gz
 	git clone https://github.com/cudpp/cudpp.git
 	cd cudpp
 	git submodule init
