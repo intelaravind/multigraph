@@ -1,10 +1,22 @@
 #!/bin/bash
 
+if [ "$1" = "" ]
+then
+	echo "----- Usage -----"
+	echo "Run MultiGraph : ./benchmark.sh multigraph"
+	echo "Run CuSha : ./benchmark.sh cusha"
+	echo "Run WS : ./benchmark.sh ws"
+	echo "Run Groute : ./benchmark.sh groute"
+	echo "Run Gunrock : ./benchmark.sh gunrock"
+
+
+elif [ "$1" = "multigraph" ]
+then
+	
 export CUDPP_DIR=./cudpp
 
 export CUDPP_LIB=$CUDPP_DIR/lib
 export CUDPP_INCLUDE=$CUDPP_DIR/include
-
 
 cd code
 
@@ -108,18 +120,11 @@ echo
 done
 
 cd ..
-########
 
-
+elif [ "$1" = "cusha" ]
+then
 
 cd CuSha/
-#for i in cusha_bfs cusha_cc cusha_sssp cusha_pr
-#do
-#for j in soc-LiveJournal1 soc-orkut hollywood-2009 indochina-2004 rmat24 road_usa rgg_n_2_24_s0 kron_g500-logn21 roadNet-CA
-#do
-#./${i} ${j}.
-#done
-#done
 
 echo "Cusha BFS (Original numbering)"
 for j in soc-LiveJournal1 soc-orkut hollywood-2009 indochina-2004 rmat24 road_usa rgg_n_2_24_s0 kron_g500-logn21 roadNet-CA
@@ -189,6 +194,9 @@ echo "Cusha PR (Random numbering)"
 ./cusha_pr --input ../roadNet-CA_/roadNet-CA_.cusha3 --method CW --arbparam 1916604
 
 cd ..
+
+elif [ "$1" = "ws" ]
+then
 
 cd WS-VR
 cd src
@@ -263,6 +271,8 @@ echo "WS PR (Random numbering)"
 cd ..
 cd ..
 
+elif [ "$1" = "groute" ]
+then
 #######################
 cd ppopp17-artifact/code/groute/build
 
@@ -337,8 +347,6 @@ echo "Groute CC(Random numbering)"
 ./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/renumber/road_usa/road_usa.gr 
 ./cc -num_gpus 1 -startwith 1  -graphfile ../../../../groute_data/renumber/roadNet-CA/roadNet-CA.gr 
 
-
-
 echo "Groute PR(Original numbering)"
 ./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/original/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/prtmp.txt
 ./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/original/soc-orkut/soc-orkut.gr -output /tmp/prtmp.txt
@@ -349,7 +357,6 @@ echo "Groute PR(Original numbering)"
 ./pr -num_gpus 1 -startwith 1 --prio_delta=32 -graphfile ../../../../groute_data/original/rgg_n_2_24_s0/rgg_n_2_24_s0.gr -output /tmp/prtmp.txt
 ./pr -num_gpus 1 -startwith 1 --prio_delta=128 -graphfile ../../../../groute_data/original/road_usa/road_usa.gr -output /tmp/prtmp.txt
 ./pr -num_gpus 1 -startwith 1 --prio_delta=64 -graphfile ../../../../groute_data/original/roadNet-CA/roadNet-CA.gr -output /tmp/prtmp.txt
-
 
 echo "Groute PR(Random numbering)"
 ./pr -num_gpus 1 -startwith 1 --prio_delta=100 -graphfile ../../../../groute_data/renumber/soc-LiveJournal1/soc-LiveJournal1.gr -output /tmp/prtmp.txt
@@ -363,19 +370,17 @@ echo "Groute PR(Random numbering)"
 ./pr -num_gpus 1 -startwith 1 --prio_delta=64  -graphfile ../../../../groute_data/renumber/roadNet-CA/roadNet-CA.gr -output /tmp/prtmp.txt
 
 
-
-
-
-
-
 cd ..
 cd ..
-#######################
-#ppopp17-artifact/code/gunrock/build/bin
-cd gunrock/build/bin
+cd ..
+cd ..
+
+elif [ "$1" = "gunrock" ]
+then
+
+cd ppopp17-artifact/code/gunrock/build/bin
 
 export BC_SETTING="--iteration-num=10"
-
 
 echo "Gunrock BC(Original numbering)"
 ./bc market ../../../../../soc-LiveJournal1/soc-LiveJournal1.mtx ${BC_SETTING} --device=0 --traversal-mode="LB_CULL" --do_a="0.200" --do_b="0.1" 
@@ -533,3 +538,4 @@ cd ..
 cd ..
 cd ..
 
+fi
