@@ -15,7 +15,7 @@ then
 	cd cudpp
 	git submodule init
 	git submodule update
-	mkdir build
+	mkdir -p build
 	cd build
 	cmake ..
 	make
@@ -77,11 +77,11 @@ then
 	tar -xvf pack.tar.gz
 	git clone --recursive https://github.com/groute/ppopp17-artifact.git
 
-	mkdir ppopp17-artifact
-	mkdir ppopp17-artifact/code
-	mkdir ppopp17-artifact/code/gunrock
-	mkdir ppopp17-artifact/code/gunrock/gunrock
-	mkdir ppopp17-artifact/code/gunrock/gunrock/app
+	mkdir -p ppopp17-artifact
+	mkdir -p ppopp17-artifact/code
+	mkdir -p ppopp17-artifact/code/gunrock
+	mkdir -p ppopp17-artifact/code/gunrock/gunrock
+	mkdir -p ppopp17-artifact/code/gunrock/gunrock/app
 	cp -R prt ppopp17-artifact/code/gunrock/gunrock/app
 
 	cp groute_setup.sh ppopp17-artifact
