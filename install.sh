@@ -77,12 +77,12 @@ then
 	tar -xvf pack.tar.gz
 	git clone --recursive https://github.com/groute/ppopp17-artifact.git
 
-	mkdir -p ppopp17-artifact
-	mkdir -p ppopp17-artifact/code
-	mkdir -p ppopp17-artifact/code/gunrock
-	mkdir -p ppopp17-artifact/code/gunrock/gunrock
-	mkdir -p ppopp17-artifact/code/gunrock/gunrock/app
-	cp -R prt ppopp17-artifact/code/gunrock/gunrock/app
+#	mkdir -p ppopp17-artifact
+#	mkdir -p ppopp17-artifact/code
+#	mkdir -p ppopp17-artifact/code/gunrock
+#	mkdir -p ppopp17-artifact/code/gunrock/gunrock
+#	mkdir -p ppopp17-artifact/code/gunrock/gunrock/app
+#	cp -R prt ppopp17-artifact/code/gunrock/gunrock/app
 
 	cp groute_setup.sh ppopp17-artifact
 	cd ppopp17-artifact
