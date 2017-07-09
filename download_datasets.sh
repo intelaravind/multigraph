@@ -72,9 +72,15 @@ tar -xvf groute_data.tar.gz
 rm groute_data.tar.gz*
 
 #tar -xvf pack.tar.gz
+for i in soc-LiveJournal1 soc-orkut hollywood-2009 indochina-2004 rmat24 kron_g500-logn21 rgg_n_2_24_s0 road_usa roadNet-CA 
+do
+mv groute_data/original/${i}/*.* ${i}
+mv groute_data/renumber/${i}/${i}.gr groute_data/renumber/${i}/${i}_.gr
+mv groute_data/renumber/${i}/${i}.gr.metadata groute_data/renumber/${i}/${i}_.gr.metadata
+mv groute_data/renumber/${i}/*.* ${i}_
+done
 
 
-################################
 for i in soc-LiveJournal1 soc-orkut hollywood-2009 indochina-2004 rmat24 road_usa rgg_n_2_24_s0 kron_g500-logn21 roadNet-CA 
 do
 ./convert ${i}/${i}.mtx ${i}/${i}.cusha1 ${i}/${i}.cusha2 ${i}/${i}.cusha3
