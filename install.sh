@@ -49,7 +49,7 @@ then
 	nvcc -O3 -gencode arch=compute_35,code=sm_35 -DPR_D  -DPRINT_OUTPUT0 -DVALIDATE -DSYM -DTRACE0 -lcudpp --use_fast_math -Xptxas "-v -dlcm=cg" -I${CUDPP_INCLUDE} -L${CUDPP_LIB} read_input.cu function.cu gen_structure.cu release_structure.cu process.cu process2.cu processi.cu validate.cu main.cu -o DATA_DRIVEN_PR
 cd ..
 
-elif ["$1" = "cusha"]
+elif [ "$1" = "cusha" ]
 then
 	tar -xvf pack.tar.gz
 	git clone https://github.com/farkhor/CuSha
@@ -60,7 +60,7 @@ then
 	cp ../cusha1.sh .
 	./cusha1.sh
 	cd ..
-elif ["$1" = "ws"]
+elif [ "$1" = "ws" ]
 then
 	tar -xvf pack.tar.gz
 	git clone https://github.com/farkhor/WS-VR
@@ -73,7 +73,7 @@ then
 	./ws1.sh
 	cd ..
 	cd ..
-elif ["$1" = "groute"]
+elif [ "$1" = "groute" ]
 then
 	tar -xvf pack.tar.gz
 	git clone --recursive https://github.com/groute/ppopp17-artifact.git
