@@ -253,7 +253,13 @@ do
 	else
 		echo "random re-numbering,$X"
 	fi
-	./${i} -source_node=${Y} -graphfile ../../../../${X}/${X}.gr ${VAL}
+	if [ "${i}" == "bfs" ] || [ "${i}" == "sssp" ]
+	then
+		./${i} -source_node=${Y} -graphfile ../../../../${X}/${X}.gr ${VAL}
+	else
+		./${i} -graphfile ../../../../${X}/${X}.gr ${VAL}
+	fi
+	echo
     fi
 done < ../../../../datasets.list
 echo
