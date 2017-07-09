@@ -1,0 +1,20 @@
+soc-LiveJournal1 -num_gpus 1 -startwith 1 --prio_delta=100 
+soc-orkut -num_gpus 1 -startwith 1 --prio_delta=100
+hollywood-2009 -num_gpus 1 -startwith 1 --prio_delta=100 
+indochina-2004 -num_gpus 1 -startwith 1 --prio_delta=100
+rmat24 -num_gpus 1 -startwith 1 --prio_delta=100
+kron_g500-logn21 -num_gpus 1 -startwith 1 --prio_delta=100 
+rgg_n_2_24_s0 -num_gpus 1 -startwith 1 --prio_delta=32 
+road_usa -num_gpus 1 -startwith 1 --prio_delta=128
+roadNet-CA -num_gpus 1 -startwith 1 --prio_delta=64
+soc-LiveJournal1_ -num_gpus 1 -startwith 1 --prio_delta=100 
+soc-orkut_ -num_gpus 1 -startwith 1 --prio_delta=100
+hollywood-2009_ -num_gpus 1 -startwith 1 --prio_delta=100 
+indochina-2004_ -num_gpus 1 -startwith 1 --prio_delta=100
+rmat24_ -num_gpus 1 -startwith 1 --prio_delta=100
+kron_g500-logn21_ -num_gpus 1 -startwith 1 --prio_delta=100 
+rgg_n_2_24_s0_ -num_gpus 1 -startwith 1 --prio_delta=32 
+road_usa_ -num_gpus 1 -startwith 1 --prio_delta=128
+roadNet-CA_ -num_gpus 1 -startwith 1 --prio_delta=64
+
+
